@@ -19,9 +19,7 @@ if (isset($_POST['submit']) && isset($_POST['new'])) {
 	
 	$file = 'salajased_paroolid.txt';
 	file_put_contents($file, $newent, FILE_APPEND | LOCK_EX);
-	echo "salajased_paroolid.txt uus sisu on: <br/>";
-			include 'salajased_paroolid.txt';
-			echo "<br/><br/><br/>";
+	header('Location: LukasUus.php');
 	
 }
 ?>
