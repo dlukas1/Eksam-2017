@@ -10,9 +10,11 @@
 		$upass = htmlspecialchars($_POST['pwd']);
 		$realpass = "realpass";
 			if ($upass == $realpass) {
-				echo "salajased_paroolid.txt sisu on: <br/>";
+
+				header('Location: LukasUus.php');
+				/*echo "salajased_paroolid.txt sisu on: <br/>";
 			include 'salajased_paroolid.txt';
-			//include 'LukasUus.php';
+			//include 'LukasUus.php';*/
 
 			} else {
 				echo "Vale parool";
